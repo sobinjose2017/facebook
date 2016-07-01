@@ -113,3 +113,33 @@ margin:0;
 .display-error .panel {
     height: auto;
 }
+.login-error {
+    background-color: #fff;
+    border: 1px solid red;
+    height: 16%;
+    position: absolute;
+    right: -229px;
+    top: 81px;
+    width: 52%;
+    
+}
+.login-error > label {
+    color: red;
+    font-weight: normal;
+}
+.details {
+    margin-left: 440px;
+    text-align: justify;
+    width: 36%;
+}
+.details ul {
+    list-style: outside none none;
+}
+.details ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+.details input {
+    margin-bottom: 40px;
+    margin-left: 140px;
+}

@@ -36,6 +36,12 @@
                                
                 </div>
             </div>
+                  <div class="login-error">
+                <label>
+                    The email address you've entired does'nt match any account. Sign up for an account
+                </label>
+                  </div>
+                     
             <div class="col-md-4">
                 <label>Password</label>
             </div>
@@ -47,6 +53,17 @@
                 <a href="#">Forgoteen Password?</a>
 
             </div>
+                 @ViewBag.msg
+                 
+                      
+                  
+                  <div class="login-error password">
+                <label>
+                    The Password that  you've entired incorrect. <strong>Forgotten Password</strong>
+                </label>
+                  </div>
+                  
+                  
               }
         </div>
     </div>

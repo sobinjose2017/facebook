@@ -5,6 +5,7 @@
     <link href="~/StyleSheet1.css" rel="stylesheet" />
    
     <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.11.4.js"></script>
     <script src="~/Scripts/script.js"></script>
 </head>
 <body>
@@ -16,8 +17,10 @@
          
          
               <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search Facebook" aria-describedby="basic-addon2">
-  <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-search"></i></span>
+      <input type="text" class="form-control" placeholder="Search Facebook" aria-describedby="basic-addon2" id="search" >
+  
+                  <input type="hidden" id="values" value="@ViewData["user"]" />
+                  <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-search"></i></span>
 </div>
 
               </div>
@@ -34,7 +37,7 @@
 <div class="user-body">
 <div class="container">
 <div class="row">
-<div class="col-md-3 details">
+<div class="col-md-3 news">
 <div class ="row profile">
 <div class="col-md-2">
 <img src="@ViewBag.photo" width="50" >

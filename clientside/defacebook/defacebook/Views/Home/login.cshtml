@@ -16,19 +16,19 @@
     </div>
       <div class="row pull-right">
         
-              
-          
+            @using (Html.BeginForm("Login","Home", FormMethod.Post))
+{
           <div class="col-md-4">
               <div class="form-group">
                <label>Email</label>
-              <input id="txtemail" type="text" class="form-control" name="email" />
+              <input id="txtemail" type="text" class="form-control" name="email" value="info@baabtra.com"/>
                   <input id="Checkbox1" type="checkbox" /><span>Keep Me Logged In</span>
               </div>
               </div>
                <div class="col-md-4">
               <div class="form-group">
                <label>Password</label>
-              <input id="txtpassword" type="password" class="form-control" name="password" />
+              <input id="txtpasswords" type="password" class="form-control" name="password"value="thisistrue" />
                   <a href="#"><span>Forgot Your Password?</span></a>
                   
               </div>
@@ -38,6 +38,7 @@
                         <input id="login" type="submit" value="Log In" class="btn btn-site-blue"/>
                     </div>
                 </div>
+            }
           
       </div>
     
@@ -60,6 +61,7 @@
                         <div class="col-md-6">
                           <div class="form-group">
                              <input id="txtfname" type="text" class="form-control" placeholder="firstname"name="txtfname" />
+                                <label style="color: red; text-transform: capitalize;">@ViewData["length"]</label>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -72,6 +74,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                              <input id="txtusername" type="text" class="form-control" placeholder="Email or Mobile number" name="txtusername" />
+                              <label style="color: red; text-transform: capitalize;">@ViewData["email"]</label>
                             </div>
                         </div>
                     </div>
@@ -80,7 +83,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                              <input id="txtreusername" type="text" class="form-control" placeholder="Re-enter Email or Mobile number" name="txtreusername"/>
-                            <label style="color: green; text-transform: capitalize;">@ViewBag.same</label>
+                            <label style="color: red; text-transform: capitalize;">@ViewData["matching"]</label>
                             </div>
                         </div>
                     </div>
@@ -89,6 +92,7 @@
                         <div class="col-md-12">
                             <div class="form-group">
                              <input id="txtpassword" type="text" class="form-control" placeholder="New Password" name="txtpassword"/>
+                                  <label style="color: red; text-transform: capitalize;">@ViewData["password"]</label>
                             </div>
                         </div>
                     </div>
@@ -116,6 +120,16 @@
                                <option>Month</option>
                                 <option>01</option>
                                 <option>02</option>
+                                <option>03</option>
+                           <option>04</option>
+                           <option>05</option>
+                           <option>06</option>
+                           <option>07</option>
+                           <option>08</option>
+                           <option>09</option>
+                           <option>10</option>
+                           <option>12</option>
+                           
                             </select>
                            </div>
                                </div>

@@ -20,7 +20,7 @@ namespace defacebook
             routes.MapRoute(
                 name: "Login",
                 url: "Home/login",
-                defaults: new { controller = "Home", action = "login", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Login", id = UrlParameter.Optional }
             );
             routes.MapRoute(
                 name: "Loginerror",
@@ -32,6 +32,11 @@ namespace defacebook
                url: "Home/sucess{id}",
                defaults: new { controller = "Home", action = "sucess", id = UrlParameter.Optional }
            );
+            routes.MapRoute(
+              name: "showusers",
+              url: "Home/showusers",
+              defaults: new { controller = "Home", action = "showusers", id = UrlParameter.Optional }
+          );
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
