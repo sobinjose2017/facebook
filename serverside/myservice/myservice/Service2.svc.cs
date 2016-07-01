@@ -26,7 +26,7 @@ namespace myservice
         {
             return JsonConvert.SerializeObject(table);
         }
-        /*[WebGet(ResponseFormat = WebMessageFormat.Json)]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
         public string InsertIntoRegister(string fname, string lname, string username, string password, string gender, string datestirng,int status)
         {
 
@@ -92,7 +92,7 @@ namespace myservice
                 }
 
             }
-        }*/
+        }
     
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
         public string ValidateUserLogin(string username, string password)
@@ -242,7 +242,7 @@ namespace myservice
                 }
             }
         }
-        /*[WebGet(ResponseFormat = WebMessageFormat.Json)]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
         public String showusers()
         {
             string connString = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
@@ -280,7 +280,7 @@ namespace myservice
             }
 
           
-        }*/
+        }
 
 
     }
